@@ -1,0 +1,6 @@
+#!/bin/bash
+
+path=$(pwd)
+
+echo "The current path is:"
+echo "$path"
