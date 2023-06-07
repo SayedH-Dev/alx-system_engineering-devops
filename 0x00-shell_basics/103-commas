@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -avmpd
+ls -a -pmv
