@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "current path is($pwd -P)"
+echo "current working directory is /alx-system_engineering-devops/0x00-shell_basics"
