@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd '' | cut -c 1
+cut -c 1 | paste -sd ''
