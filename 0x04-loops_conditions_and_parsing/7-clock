@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# displays time in hours and minutes
+for hr in {0..12}; do
+if [ $hr -eq 0 ]; then
+echo "Hour: 0"
+else
+echo "Hour: $hr"
+fi
+for min in {1..59}; do
+echo "$min"
+done
+done
