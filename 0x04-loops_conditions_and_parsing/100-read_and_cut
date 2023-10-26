@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# display username, id, directory for a specific path
+file="/etc/passwd"
+while IFS=":" read -r user _ id _ _ dir _; do
+echo "$user:$id:$dir"
+done < "$file"
