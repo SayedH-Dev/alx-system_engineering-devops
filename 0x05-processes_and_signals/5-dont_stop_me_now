@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# kills a process
+process="4-to_infinity_and_beyond"
+pid=$(pgrep -f "$process")
+if [ -n "$pid" ]; then
+kill "$pid"
+fi
