@@ -3,11 +3,11 @@
 clean()
 {
         rm -f /var/run/myscript.pid
+	echo "I hate the kill command"
                 exit
 }
 trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command"' SIGTERM
-trap 'clean' SIGQUIT
+trap 'echo "I hate the kill command"; clean' SIGTERM
 echo $$ > /var/run/myscript.pid
 while true; do
 echo "To infinity and beyond"
