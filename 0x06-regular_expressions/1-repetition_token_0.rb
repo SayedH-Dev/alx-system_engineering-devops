@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-match = ARGV[0].scan(/hb(t{2, 5})n/)
+match = ARGV[0].scan(/hbt{2, 6}n/)
 puts match.join
