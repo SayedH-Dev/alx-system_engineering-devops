@@ -2,6 +2,6 @@
 # configuration of ubuntu server to be 127.0.0.2 for localhost
 # and 8.8.8.8 for facebook.com
 cp /etc/hosts ~/hostupdate
-echo "127.0.0.2         localhost" > ~/hostupdate
-echo "8.8.8.8           facebook.com" >> ~/hostupdate
+echo "127.0.0.2 localhost" > ~/hostupdate
+echo "8.8.8.8 facebook.com" >> ~/hostupdate
 cp -f ~/hostupdate /etc/hosts
