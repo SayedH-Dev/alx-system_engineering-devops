@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# configuration of ubuntu server to be 127.0.0.2 for localhost
+# and 8.8.8.8 for facebook.com
+if [ "$EUID" -ne 0 ]; then
+	exit 1
+fi
+cp /etc/hosts /etc/hosts.bak
+entries="127.0.0.2 localhost
+8.8.8.8 facebook.com"
+echo "$entries" > /etc/host
